@@ -1,1 +1,23 @@
+#include <iostream>
+#iclude <cmath>
+#include <string>
+#include <iomanip>
 
+using namespace std; 
+
+int main()
+{
+  double x, y;
+  string str;
+  x = 9.0;
+  y = 3.2;
+
+cout  << fixed << showpoint << setprecision(2);
+cout << x << "^" << y << " = " << pow(x, y) << endl;
+cout << "5.0^2.5 = " << pow(5.0, 2.5) << endl;
+cout << "sqrt(48.35) = " << sqrt(48.35) << endl;
+cout << "static_cast<int>(sqrt(pow(y, 4))) = " << static_cast<int>(sqrt(pow(y, 4))) << endl;
+str = "predefined functions simplify programming code!";
+cout << "length of str = " << str.length() << endl;
+return 0;
+}
